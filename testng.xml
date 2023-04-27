@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Swagger Pet Store API" parallel="tests" thread-count="3">
+
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager"/>
+    </listeners>
+
+    <test name="Data Driven Testing">
+        <classes>
+            <class name="api.test.DDTests"/>
+        </classes>
+    </test>
+
+    <test name="Testing User API">
+        <classes>
+            <class name="api.test.UserTests"/>
+        </classes>
+    </test>
+
+    <test name="Testing User API Using Properties file">
+        <classes>
+            <class name="api.test.UserTests2"/>
+        </classes>
+    </test>
+</suite>
