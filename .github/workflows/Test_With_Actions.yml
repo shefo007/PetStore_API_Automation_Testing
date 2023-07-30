@@ -25,4 +25,4 @@ jobs:
 #       run: mvn clean test
 
     - name: Run from cmd file in repo
-      uses: ./executeTestNGFileWithCMD.bat
+      run: ./executeTestNGFileWithCMD.bat
